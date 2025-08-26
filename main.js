@@ -9,20 +9,27 @@ function showTasks() {
     list.innerHTML = "";
     task.forEach((item, i) => {
         const div = document.createElement("div");
+        div.setAttribute("class", "todo-item")
+
+        const btnsDiv = document.createElement("div");
+        btnsDiv.setAttribute("class", "div-btns");
 
         const h3 = document.createElement("h3");
         h3.innerText = item.title;
 
         const editBtn = document.createElement("button");
+        editBtn.setAttribute("class", "edit-btn")
         editBtn.innerText = "Edit";
 
         const deleteBtn = document.createElement("button");
+        deleteBtn.setAttribute("class", "delete-btn");
         deleteBtn.innerText = "Delete";
 
         editBtn.onclick = () => editTask(i);
         deleteBtn.onclick = () => deleteTask(i);
 
-        div.append(h3, editBtn, deleteBtn);
+        div.append(h3, btnsDiv );
+        btnsDiv.append(editBtn, deleteBtn);
         list.append(div);
     });
 
