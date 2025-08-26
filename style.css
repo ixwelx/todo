@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+.container {
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #26264e;
+    margin-bottom: 20px;
+}
+.box-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    width: 800px;
+    height: 50px;
+    font-size: 20px;
+    border: 3px solid #434388;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #d8d8d8;
+}
+.create-btn {
+    width: 100px;
+    height: 50px;
+    background-color: #1a1a33;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.todo-list {
+    width: 850px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border: 2px solid rgb(135, 135, 138);
+    border-radius: 5px;
+}
+.div-btns {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.edit-btn {
+    width: 150px;
+    height: 40px;
+    border: 2px solid white;
+    cursor: pointer;
+    background: #5c5cba;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+.delete-btn {
+    width: 150px;
+    height: 40px;
+    border: 2px solid white;
+    cursor: pointer;
+    background: #9e2c2c;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
